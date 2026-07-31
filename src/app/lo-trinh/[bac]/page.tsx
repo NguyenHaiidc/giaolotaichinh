@@ -50,7 +50,7 @@ export default async function Page({ params }: { params: Promise<{ bac: string }
       mucLuc={mucLuc}
       urlDayDu={urlDayDu}
       baiLienQuan={baiTrongBac}
-      tieuDeBaiLienQuan="Bài viết trong bậc này"
+      tieuDeBaiLienQuan="Bài viết trong bước này"
     >
       <NoiDung />
     </BaiVietLayout>
