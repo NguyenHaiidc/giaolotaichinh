@@ -25,22 +25,18 @@ const components: MDXComponents = {
   ol: (props) => (
     <ol className="mt-4 list-decimal space-y-2 pl-6 text-zinc-700 dark:text-zinc-300" {...props} />
   ),
-  a: ({ href = "", ...props }) =>
-    href.startsWith("/") ? (
-      <Link
-        href={href}
-        className="font-medium text-emerald-700 underline underline-offset-2 dark:text-emerald-400"
-        {...props}
-      />
-    ) : (
-      <a
-        href={href}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="font-medium text-emerald-700 underline underline-offset-2 dark:text-emerald-400"
-        {...props}
-      />
-    ),
+  a: ({ href = "", ...props }) => {
+    const className = "font-medium text-emerald-700 underline underline-offset-2 dark:text-emerald-400";
+    if (href.startsWith("/")) {
+      return <Link href={href} className={className} {...props} />;
+    }
+    if (href.startsWith("#")) {
+      return <a href={href} className={className} {...props} />;
+    }
+    return (
+      <a href={href} target="_blank" rel="noopener noreferrer" className={className} {...props} />
+    );
+  },
   img: ({ alt = "", ...props }) => (
     // eslint-disable-next-line @next/next/no-img-element
     <img alt={alt} loading="lazy" className="mt-6 rounded-lg" {...props} />
