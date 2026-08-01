@@ -55,6 +55,24 @@ const components: MDXComponents = {
     <code className="rounded bg-zinc-100 px-1.5 py-0.5 text-sm dark:bg-zinc-800" {...props} />
   ),
   hr: (props) => <hr className="my-8 border-zinc-200 dark:border-zinc-800" {...props} />,
+  table: (props) => (
+    <div className="mt-4 overflow-x-auto rounded-lg border border-zinc-200 dark:border-zinc-800">
+      <table className="w-full border-collapse text-left text-sm" {...props} />
+    </div>
+  ),
+  thead: (props) => <thead className="bg-zinc-50 dark:bg-zinc-900" {...props} />,
+  th: (props) => (
+    <th
+      className="border-b border-zinc-200 px-4 py-2 font-semibold text-zinc-900 dark:border-zinc-800 dark:text-zinc-100"
+      {...props}
+    />
+  ),
+  td: (props) => (
+    <td
+      className="border-b border-zinc-100 px-4 py-2 text-zinc-700 last:border-b-0 dark:border-zinc-900 dark:text-zinc-300"
+      {...props}
+    />
+  ),
   CanhBao: CanhBaoBox,
   LuuYPhapLy,
   CTA: CTAMoTaiKhoan,
