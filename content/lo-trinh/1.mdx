@@ -20,6 +20,57 @@ khi đặt lệnh mua bán đầu tiên.
 - Các loại lệnh cơ bản (ATO, ATC, LO,...).
 - Đọc bảng giá chứng khoán.
 
+## Chỉ số VN-Index, VN30, VNDiamond là gì
+
+**VN-Index** đo lường biến động giá của toàn bộ cổ phiếu niêm yết trên Sở
+Giao dịch Chứng khoán TP.HCM (HOSE), lấy mốc 100 điểm vào ngày giao dịch đầu
+tiên 28/07/2000.
+
+Về bản chất, VN-Index tính theo **phương pháp vốn hóa thị trường điều chỉnh
+theo tỷ lệ cổ phiếu tự do chuyển nhượng (free-float)**: cổ phiếu nào vốn hóa
+tự do chuyển nhượng càng lớn thì càng ảnh hưởng nhiều đến chỉ số.
+
+> Chỉ số = Tổng vốn hóa điều chỉnh free-float của các cổ phiếu thành phần ÷ Hệ số chia (Divisor)
+
+Hệ số chia được điều chỉnh mỗi khi có thay đổi (niêm yết mới, hủy niêm yết,
+phát hành thêm cổ phiếu...) để chỉ số không bị "nhảy" chỉ vì lý do kỹ thuật
+chứ không phải do giá cổ phiếu thay đổi thật.
+
+Ngoài VN-Index, hai chỉ số phổ biến khác trên HOSE:
+
+- **VN30**: gồm 30 cổ phiếu có vốn hóa và thanh khoản lớn nhất HOSE, thường
+  được xem là đại diện cho nhóm "bluechip". Danh mục được rà soát định kỳ 2
+  lần/năm (tuần thứ 4 tháng 1 và tháng 7).
+- **VNDiamond**: tập hợp cổ phiếu chất lượng cao đã hết hoặc gần hết tỷ lệ
+  sở hữu nước ngoài (room ngoại) — giúp nhà đầu tư nước ngoài tiếp cận gián
+  tiếp các cổ phiếu này thông qua quỹ ETF mô phỏng chỉ số.
+
+<LuuYPhapLy tieuDe="Quy tắc chỉ số có thể thay đổi theo thời gian">
+  Công thức, tiêu chí lựa chọn cổ phiếu và lịch rà soát danh mục do HOSE ban
+  hành và có thể được cập nhật theo từng phiên bản bộ quy tắc chỉ số — nên
+  kiểm tra bộ quy tắc mới nhất trên hsx.vn khi cần con số chính xác.
+</LuuYPhapLy>
+
+## Các loại lệnh cơ bản: ATO, LO, MP, ATC
+
+Một ngày giao dịch trên HOSE chia thành nhiều phiên, mỗi phiên chỉ chấp nhận
+một số loại lệnh nhất định:
+
+![Khung giờ giao dịch trên HOSE: 9h00-9h15 khớp lệnh định kỳ ATO, 9h15-11h30 khớp lệnh liên tục LO/MP, 11h30-13h00 nghỉ trưa, 13h00-14h30 khớp lệnh liên tục LO/MP, 14h30-14h45 khớp lệnh định kỳ ATC, 14h45-15h00 giao dịch thỏa thuận](/images/khung-gio-giao-dich-hose.svg)
+
+| Lệnh | Áp dụng lúc nào | Đặc điểm |
+| --- | --- | --- |
+| **ATO** (At The Opening) | 9h00 – 9h15 | Không nhập giá, khớp tại mức giá mở cửa được xác định qua đấu giá. Không thể hủy hoặc sửa; phần không khớp bị hủy tự động sau 9h15. |
+| **LO** (Limit Order) | Suốt phiên (trừ giao dịch thỏa thuận) | Đặt mức giá cụ thể, chỉ khớp tại giá đó hoặc tốt hơn. Có thể hủy/sửa khi lệnh chưa khớp. |
+| **MP** (Market Price) | 9h15 – 11h30 và 13h00 – 14h30 | Không nhập giá, khớp ngay tại giá tốt nhất đang chờ ở phía đối ứng. Phần chưa khớp hết tự động chuyển thành lệnh LO tại giá trần (khi mua) hoặc giá sàn (khi bán). |
+| **ATC** (At The Close) | 14h30 – 14h45 | Tương tự ATO nhưng dùng để xác định giá đóng cửa. Không thể hủy hoặc sửa. |
+
+<LuuYPhapLy>
+  Khung giờ và quy tắc khớp lệnh áp dụng cho HOSE tại thời điểm viết bài, có
+  thể khác với HNX/UPCoM và có thể được điều chỉnh theo quy định mới — nên
+  đối chiếu thông báo chính thức của sàn giao dịch bạn dùng.
+</LuuYPhapLy>
+
 ## Đọc bảng giá chứng khoán: các ký hiệu cơ bản
 
 Khi mở app hoặc web của công ty chứng khoán, bạn sẽ thấy một "bảng điện" đầy
