@@ -1,0 +1,36 @@
+<svg viewBox="0 0 900 260" xmlns="http://www.w3.org/2000/svg" font-family="Arial, Helvetica, sans-serif">
+  <!-- Top box -->
+  <rect x="300" y="0" width="300" height="50" rx="8" fill="#18181b"/>
+  <text x="450" y="30" text-anchor="middle" font-size="16" font-weight="700" fill="#ffffff">Sản phẩm đầu tư trên TTCK Việt Nam</text>
+
+  <!-- Connector lines -->
+  <g stroke="#a1a1aa" stroke-width="2" fill="none">
+    <line x1="450" y1="50" x2="450" y2="75"/>
+    <line x1="150" y1="75" x2="750" y2="75"/>
+    <line x1="150" y1="75" x2="150" y2="90"/>
+    <line x1="450" y1="75" x2="450" y2="90"/>
+    <line x1="750" y1="75" x2="750" y2="90"/>
+  </g>
+
+  <!-- Box 1: Chứng khoán cơ sở -->
+  <rect x="20" y="90" width="260" height="36" rx="6" fill="#059669"/>
+  <text x="150" y="113" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff">Chứng khoán cơ sở</text>
+  <rect x="20" y="126" width="260" height="114" rx="0" fill="#ffffff" stroke="#e4e4e7"/>
+  <text x="150" y="150" text-anchor="middle" font-size="13" fill="#3f3f46">Cổ phiếu</text>
+  <text x="150" y="178" text-anchor="middle" font-size="13" fill="#3f3f46">Trái phiếu</text>
+
+  <!-- Box 2: Chứng khoán phái sinh -->
+  <rect x="320" y="90" width="260" height="36" rx="6" fill="#0284c7"/>
+  <text x="450" y="113" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff">Chứng khoán phái sinh</text>
+  <rect x="320" y="126" width="260" height="114" rx="0" fill="#ffffff" stroke="#e4e4e7"/>
+  <text x="450" y="150" text-anchor="middle" font-size="13" fill="#3f3f46">HĐTL chỉ số (VN30, HNX30)</text>
+  <text x="450" y="176" text-anchor="middle" font-size="13" fill="#3f3f46">HĐTL trái phiếu Chính phủ</text>
+  <text x="450" y="202" text-anchor="middle" font-size="13" fill="#3f3f46">Chứng quyền</text>
+
+  <!-- Box 3: Chứng chỉ quỹ ETF -->
+  <rect x="620" y="90" width="260" height="36" rx="6" fill="#4f46e5"/>
+  <text x="750" y="113" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff">Chứng chỉ quỹ ETF</text>
+  <rect x="620" y="126" width="260" height="114" rx="0" fill="#ffffff" stroke="#e4e4e7"/>
+  <text x="750" y="150" text-anchor="middle" font-size="13" fill="#3f3f46">ETF nội địa</text>
+  <text x="750" y="178" text-anchor="middle" font-size="13" fill="#3f3f46">ETF ngoại</text>
+</svg>
